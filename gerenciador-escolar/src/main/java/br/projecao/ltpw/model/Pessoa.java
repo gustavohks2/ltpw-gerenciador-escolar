@@ -29,8 +29,9 @@ import javax.persistence.TemporalType;
 )
 public class Pessoa  implements java.io.Serializable {
 
-
-     private int idPessoa;
+	private static final long serialVersionUID = -8977545930010018014L;
+	
+	private int idPessoa;
      private Date dataIngresso;
      private Date dataNascimento;
      private String email;
@@ -42,6 +43,7 @@ public class Pessoa  implements java.io.Serializable {
      private String sobrenome;
      private String usuario;
      private Aluno aluno;
+     private Professor professor;
 
     public Pessoa() {
     }
@@ -174,7 +176,7 @@ public class Pessoa  implements java.io.Serializable {
         this.usuario = usuario;
     }
 
-@OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="pessoa")
+    @OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="pessoa")
     public Aluno getAluno() {
         return this.aluno;
     }
@@ -184,7 +186,14 @@ public class Pessoa  implements java.io.Serializable {
     }
 
 
-
+    @OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="pessoa")
+    public Professor getProfessor() {
+        return this.professor;
+    }
+    
+    public void setProfessor(Professor professor) {
+    	this.professor = professor;
+    }
 
 }
 

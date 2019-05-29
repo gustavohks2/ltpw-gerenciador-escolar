@@ -44,8 +44,8 @@ Contributor(s):
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/projecao</property>
-    <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password"/>
+    <property name="hibernate.connection.username">nexus</property>
+    <property name="hibernate.connection.password">nexus</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
@@ -58,6 +58,5 @@ Contributor(s):
     <mapping class="br.projecao.ltpw.model.Endereco"/>
     <mapping class="br.projecao.ltpw.model.Aluno"/>
     <mapping class="br.projecao.ltpw.model.Departamento"/>
-    <mapping class="br.projecao.ltpw.teste.Teste"/>
   </session-factory>
 </hibernate-configuration>

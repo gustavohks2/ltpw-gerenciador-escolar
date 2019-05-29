@@ -5,15 +5,13 @@
  */
 package br.projecao.ltpw.dao;
 
-import javax.faces.context.FacesContext;
-
-import br.projecao.ltpw.model.Aluno;
-import br.projecao.ltpw.model.Genero;
-import br.projecao.ltpw.util.HibernateUtil;
 import java.util.List;
+
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
+
+import br.projecao.ltpw.model.Genero;
+import br.projecao.ltpw.util.HibernateUtil;
 
 /**
  *
