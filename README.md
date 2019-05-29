@@ -1,1 +1,1 @@
-# gerenciador-escolar
+# Gerenciador Escolar da disciplina LTPW
